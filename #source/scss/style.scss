@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color:#292D32;
+    text-decoration: none;
+}
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+// HEADER
+@import "header.scss";
