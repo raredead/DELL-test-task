@@ -1,0 +1,55 @@
+.header {
+    background-color: #ffffff;
+
+    .header__menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0;
+
+        .header__nav {
+            display: flex;
+            align-items: center;
+
+            .nav__icon {
+                padding-right: 60px;
+            }
+
+            .nav__list {
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: 15px;
+                color: #292D32;
+
+                text-transform: uppercase;
+                padding-right: 45px;
+            }
+
+            .nav__list:hover {
+                color: #9ba9b1;
+                transition: .3s linear;
+            }
+
+            .nav__search {}
+        }
+
+        .header__icons {
+            display: flex;
+            align-items: center;
+            
+
+            .icons__item {
+                width: 15.64px;
+                height: 18.58px;
+                margin: 0 17px;
+
+                border-radius: 50%;
+                padding: 10px;
+                background-color: #F9F9F9;
+            }
+            .icons__item:hover{
+                background-color: #f4f4f4;
+                transition: .3s linear;
+            }
+        }
+    }
+}
