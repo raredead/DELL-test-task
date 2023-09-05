@@ -76,3 +76,94 @@ a {
   width: 15.64px;
   height: 18.58px;
 }
+
+.slider {
+  background-color: #F2F2F2;
+}
+.slider .swiper .swiper-wrapper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url(../img/slider/Dell.png) no-repeat;
+  background-position: 0 20%;
+}
+.slider .swiper .swiper-wrapper .swiper-slide .slider__scroll {
+  padding: 355px 108px 0 0;
+}
+.slider .swiper .swiper-wrapper .swiper-slide .slider__scroll .scroll__txt {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: scale(-1);
+          transform: scale(-1);
+  padding-top: 15px;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #838383;
+}
+.slider .swiper .swiper-wrapper .swiper-slide .swiper-slide__block {
+  padding: 250px 0 150px 0;
+}
+.slider .swiper .swiper-wrapper .swiper-slide .swiper-slide__block .swiper-slide__suptitle {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #838383;
+}
+.slider .swiper .swiper-wrapper .swiper-slide .swiper-slide__block .swiper-slide__title {
+  font-family: "Roboto";
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #292D32;
+  max-width: 400px;
+  padding: 15px 0 60px 0;
+}
+.slider .swiper .swiper-wrapper .swiper-slide .swiper-slide__block .block__btn {
+  background-color: #33A9FF;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider .swiper .swiper-wrapper .swiper-slide .swiper-slide__block .block__btn:hover {
+  background-color: #1a70ae;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.slider .swiper .swiper-wrapper .swiper-slide .swiper-slide__block .block__href {
+  font-family: "Roboto";
+  font-size: 16px;
+  color: #292D32;
+  padding-left: 12px;
+}
+.slider .swiper .swiper-wrapper .swiper-slide .swiper-slide__img {
+  padding-right: 60px;
+}
+.slider .swiper .swiper-wrapper .swiper-slide .swiper-slide__menu {
+  padding-top: 320px;
+}
+.slider .swiper .swiper-wrapper .swiper-slide .swiper-slide__menu .menu__txt {
+  font-family: "Roboto";
+  font-size: 25px;
+  color: #292D32;
+  max-width: 180px;
+  font-weight: 400;
+}
+.slider .swiper .swiper-pagination {
+  left: 70%;
+  top: 80%;
+}
+.slider .swiper .swiper-pagination-bullet-active {
+  background-color: #292D32;
+}
+.slider .swiper .swiper-button-next {
+  top: 80%;
+  left: 85%;
+}
+.slider .swiper .swiper-button-next::after {
+  content: "";
+}
