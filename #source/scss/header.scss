@@ -38,17 +38,23 @@
             
 
             .icons__item {
-                width: 15.64px;
-                height: 18.58px;
+                
                 margin: 0 17px;
 
                 border-radius: 50%;
                 padding: 10px;
                 background-color: #F9F9F9;
             }
+            .icons__item:last-child{
+                margin-right: 0;
+            }
             .icons__item:hover{
                 background-color: #f4f4f4;
                 transition: .3s linear;
+            }
+            .icons__img{
+                width: 15.64px;
+                height: 18.58px;
             }
         }
     }
