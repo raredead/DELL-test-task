@@ -454,3 +454,158 @@ a {
   color: #b7b7b7;
   padding: 0 0 0 30px;
 }
+
+.news {
+  background-color: #f9f9f9;
+}
+.news .news-main {
+  padding: 160px 0 180px 0;
+}
+.news .news-main .news-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.news .news-main .news-head .news-head__text .news-head__title {
+  font-family: "Roboto";
+  font-size: 50px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #292D32;
+}
+.news .news-main .news-head .news-head__text .news-head__txt {
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #838383;
+  padding: 25px 0 70px 0;
+}
+.news .news-main .news-head .news-head__button .news__href {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #292D32;
+  padding-right: 17px;
+}
+.news .news-main .news-head .news-head__button .news__btn {
+  background-color: #33A9FF;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.news .news-main .news-head .news-head__button .news__btn:hover {
+  background-color: #1a70ae;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.news .news-main .news-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.news .news-main .news-block .news-block__item {
+  position: relative;
+}
+.news .news-main .news-block .news-block__item .news-block__img .news__image {
+  border-radius: 45px 0 0 0;
+}
+.news .news-main .news-block .news-block__item .news-block__plug {
+  position: relative;
+}
+.news .news-main .news-block .news-block__item .news-block__plug .plug {
+  position: absolute;
+  left: 0;
+  bottom: -84px;
+}
+.news .news-main .news-block .news-block__item .news-item__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: -47px;
+}
+.news .news-main .news-block .news-block__item .news-item__footer .footer__txt {
+  padding-left: 30px;
+}
+.news .news-main .news-block .news-block__item .news-item__footer .footer__txt .news-block__title {
+  font-family: "Roboto";
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #292D32;
+}
+.news .news-main .news-block .news-block__item .news-item__footer .footer__txt .news-block__txt {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #292D32;
+  margin-top: 10px;
+}
+.news .news-main .news-block .news-block__item .news-item__footer .news-block__btn {
+  height: 65px;
+  width: 65px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 319px;
+}
+.news .news-main .news-block .news-block__item .news-item__footer .news-block__btn .block__button {
+  background-color: #292D32;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.news .news-main .news-block .news-block__item .news-item__date {
+  position: absolute;
+  top: 40px;
+  left: 393px;
+  background-color: #fefefe;
+  width: 50px;
+  height: 97px;
+  border-radius: 15px 0 0 15px;
+  text-align: center;
+}
+.news .news-main .news-block .news-block__item .news-item__date .date__number {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 700;
+  color: #292D32;
+  padding-top: 25px;
+}
+.news .news-main .news-block .news-block__item .news-item__date .date__mounth {
+  font-family: "Roboto";
+  font-size: 10px;
+  font-weight: 400;
+  color: #292D32;
+}
+.news .news-main .news-block .item1 {
+  margin: 0 35px 130px 0;
+}
+.news .news-main .news-block .item2 {
+  margin: 0 35px 130px 35px;
+}
+.news .news-main .news-block .item3 {
+  margin: 0 0 130px 35px;
+}
+.news .news-main .news-block .item4 {
+  margin: 35px 35px 0 0;
+}
+.news .news-main .news-block .item5 {
+  margin: 35px 35px 0 35px;
+}
+.news .news-main .news-block .item6 {
+  margin: 35px 0 0 35px;
+}
