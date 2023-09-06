@@ -4,6 +4,7 @@
 }
 
 a {
+  color: #292D32;
   text-decoration: none;
 }
 
@@ -90,6 +91,11 @@ a {
 
 .slider {
   background-color: #F2F2F2;
+}
+.slider .slider_bg {
+  background: url(../img/slider/slider.jpg) no-repeat;
+  background-position: right;
+  background-size: 28% 100%;
 }
 .slider .swiper .swiper-wrapper .swiper-slide {
   display: -webkit-box;
@@ -455,11 +461,8 @@ a {
   padding: 0 0 0 30px;
 }
 
-.news {
-  background-color: #f9f9f9;
-}
 .news .news-main {
-  padding: 160px 0 180px 0;
+  padding: 160px 0 280px 0;
 }
 .news .news-main .news-head {
   display: -webkit-box;
@@ -513,6 +516,8 @@ a {
 }
 .news .news-main .news-block .news-block__item {
   position: relative;
+  -webkit-box-shadow: 5px 100px 10px #f9f9f9;
+          box-shadow: 5px 100px 10px #f9f9f9;
 }
 .news .news-main .news-block .news-block__item .news-block__img .news__image {
   border-radius: 45px 0 0 0;
@@ -608,4 +613,215 @@ a {
 }
 .news .news-main .news-block .item6 {
   margin: 35px 0 0 35px;
+}
+
+.form {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, white), color-stop(50%, #eeeeee));
+  background: linear-gradient(to bottom, white 50%, #eeeeee 50%);
+}
+.form .form_bg {
+  background: url(../img/form/our\ contacts.png) no-repeat;
+  background-position: 5% 99%;
+}
+.form .form-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0 180px 0;
+  position: relative;
+}
+.form .form-main .form-main__contact {
+  width: 600px;
+  height: 742px;
+  background-color: #f9f9f9;
+  padding: 100px 0 0 100px;
+  border-radius: 20px 0 0 20px;
+}
+.form .form-main .form-main__contact .contact__title {
+  font-family: "Roboto";
+  font-size: 50px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #292D32;
+}
+.form .form-main .form-main__contact .contact__subtitle {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #838383;
+  padding: 18px 0 50px 0;
+}
+.form .form-main .form-main__contact .contact-block {
+  position: relative;
+  max-width: 413px;
+  padding-left: 50px;
+}
+.form .form-main .form-main__contact .contact-block .contact-block__icon {
+  position: absolute;
+  left: -11px;
+}
+.form .form-main .form-main__contact .contact-block .contact-block__suptitle {
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #838383;
+  padding-bottom: 8px;
+}
+.form .form-main .form-main__contact .contact-block .contact-block__title {
+  font-family: "Roboto";
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #292D32;
+}
+.form .form-main .form-main__contact .contact__icon {
+  padding-top: 62px;
+}
+.form .form-main .form-main__contact .contact__icon .icon__el {
+  padding-right: 10px;
+}
+.form .form-main .forms__imgphone {
+  position: absolute;
+  top: 61px;
+  left: 238px;
+}
+.form .form-main .form-main__form {
+  width: 600px;
+  height: 742px;
+  background-color: #292D32;
+  border-radius: 0 20px 20px 0;
+  padding: 100px 0 0 129px;
+}
+.form .form-main .form-main__form .form__title {
+  font-family: "Roboto";
+  font-size: 50px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+}
+.form .form-main .form-main__form .form__subtitle {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 18px 0 53px 0;
+}
+.form .form-main .form-main__form .form__block {
+  position: relative;
+  max-width: 420px;
+  height: 527px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 1000;
+}
+.form .form-main .form-main__form .form__block .form__name {
+  position: relative;
+}
+.form .form-main .form-main__form .form__block .form__name .label {
+  position: absolute;
+  top: -9px;
+  left: 28px;
+  background: #292D32;
+  padding: 0 5px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  color: #F2F2F2;
+}
+.form .form-main .form-main__form .form__block .form__name .name {
+  width: 100%;
+  background-color: #292D32;
+  border: 1px solid #818386;
+  outline: none;
+  border-radius: 20px;
+  height: 68px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 0 10px;
+}
+.form .form-main .form-main__form .form__block .form__phone {
+  position: relative;
+}
+.form .form-main .form-main__form .form__block .form__phone .phone {
+  width: 100%;
+  background-color: #292D32;
+  border: 1px solid #818386;
+  outline: none;
+  border-radius: 20px;
+  height: 68px;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 0 10px;
+  margin: 40px 0;
+}
+.form .form-main .form-main__form .form__block .form__phone .label {
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  background: #292D32;
+  padding: 0 5px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  color: #F2F2F2;
+}
+.form .form-main .form-main__form .form__block .form__comm {
+  position: relative;
+}
+.form .form-main .form-main__form .form__block .form__comm .comm {
+  width: 100%;
+  background-color: #292D32;
+  border: 1px solid #818386;
+  outline: none;
+  border-radius: 20px;
+  font-size: 30px;
+  color: #ffffff;
+  padding: 10px 10px;
+  resize: none;
+}
+.form .form-main .form-main__form .form__block .form__comm .label {
+  position: absolute;
+  top: -9px;
+  left: 28px;
+  background: #292D32;
+  padding: 0 5px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  color: #F2F2F2;
+}
+.form .form-main .form-main__form .form__block .form__button {
+  padding-top: 71px;
+}
+.form .form-main .form-main__form .form__block .form__button .form__btn {
+  background-color: #33A9FF;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.form .form-main .form-main__form .form__block .form__button .form__btn:hover {
+  background-color: #1a70ae;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.form .form-main .form-main__form .form__block .form__button .form__href {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  padding-left: 12px;
+}
+
+.email {
+  padding: 47px 0 72px 0;
 }

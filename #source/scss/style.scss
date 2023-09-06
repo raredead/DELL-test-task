@@ -3,7 +3,7 @@
     padding: 0;
 }
 a{
-    // color:#292D32;
+    color:#292D32;
     text-decoration: none;
 }
 .container {
@@ -45,3 +45,6 @@ a{
 
 // NEWS
 @import "news.scss";
+
+// FORM
+@import "form.scss";
