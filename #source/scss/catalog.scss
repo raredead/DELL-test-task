@@ -1,0 +1,169 @@
+.catalog {
+
+    .catalog-main {
+        width: 100%;
+
+        display: flex;
+        // justify-content: center;
+        flex-wrap: wrap;
+        padding: 164px 0 180px 0;
+
+        .catalog-main__block {
+            max-width: 440px;
+            margin: 0 20px 20px 0;
+
+            .block__title {
+                font-family: 'Roboto';
+                font-size: 50px;
+                line-height: 1.2;
+                font-weight: 400;
+                color: #292D32;
+            }
+
+            .block__txt {
+                font-family: 'Roboto';
+                font-size: 18px;
+                line-height: 1.2;
+                font-weight: 300;
+                color: #838383;
+
+                padding: 29px 0 46px 0;
+            }
+
+            .block__btn-block {
+
+                .block__btn {
+                    background-color: #33A9FF;
+                    border: none;
+                    padding: 15px;
+                    border-radius: 50%;
+
+                    cursor: pointer;
+                }
+                .block__btn:hover{
+                    background-color: #1a70ae;
+                    transition: .3s linear;
+                }
+
+                .block__href {
+                    font-family: 'Roboto';
+                    font-size: 16px;
+                    line-height: 1.2;
+                    font-weight: 400;
+                    color: #292D32;
+
+                    padding-left: 12px;
+                }
+            }
+        }
+
+        .catalog-main__block-prodact {
+            // flex: 1 1 0;
+            width: 440px;
+            height: 381px;
+            border-radius: 20px;
+            // position: relative;
+            cursor: pointer;
+
+            .block-prodact__number {
+                font-family: 'Roboto';
+                font-size: 25px;
+                font-weight: 200;
+                color: #292D32;
+
+                padding: 50px 0 0 28px;
+            }
+
+            .block-prodact__img {
+                position: relative;
+                .block-prodact__laptop {
+                    position: absolute;
+                    left: 0;
+                    bottom: -150px;
+                }
+                .block-prodact__monitor{
+                    position: absolute;
+                    left: 110px;
+                    bottom: -150px;
+                }
+                .block-prodact__server{
+                    position: absolute;
+                    left: 50px;
+                    bottom: -170px;
+                }
+                .block-prodact__emc{
+                    position: absolute;
+                    left: 80px;
+                    bottom: -170px;
+                }
+                .block-prodact__parts{
+                    position: absolute;
+                    left: 60px;
+                    bottom: -210px;
+                }
+            }
+            .block-prodact__text{
+                padding: 186px 0 40px 40px;
+                
+                .block-prodact__suptitle {
+                    font-family: 'Roboto';
+                    font-size: 18px;
+                    font-weight: 300;
+                    color: #838383;
+                }
+    
+                .block-prodact__title {
+                    font-family: 'Roboto';
+                    font-size: 25px;
+                    line-height: 1.2;
+                    font-weight: 400;
+                    color: #292D32;
+                }
+            }
+            
+            .block-prodact__title:hover{
+                text-decoration: underline;
+            }
+        }
+        .margin01{
+            margin: 0 20px 20px 20px;
+            background-color: #F2F2F2;
+        }
+        .margin01:hover{
+            background-color: #F9F9F9;
+            transition: .3 linear;
+        }
+        .margin02{
+            margin: 0 0 20px 20px;
+            background-color: #F9F9F9;
+        }
+        .margin02:hover{
+            background-color: #F2F2F2;
+            transition: .3 linear;
+        }
+        .margin03{
+            margin: 20px 20px 0 0;
+            background-color: #F2F2F2;
+        }
+        .margin03:hover{
+            background-color: #F9F9F9;
+            transition: .3 linear;
+        }
+        .margin04{
+            margin: 20px 20px 0 20px;
+            background-color: #F9F9F9;
+        }
+        .margin04:hover{
+            background-color: #F2F2F2;
+            transition: .3 linear;
+        }
+        .margin05 {
+            margin: 20px 0 0 20px;
+            background-color: #F2F2F2;
+        }
+        .margin05:hover{
+            background-color: #F9F9F9;
+            transition: .3 linear;
+        }
+    }
+}
