@@ -3,7 +3,7 @@
     padding: 0;
 }
 a{
-    color:#292D32;
+    // color:#292D32;
     text-decoration: none;
 }
 .container {
@@ -12,6 +12,25 @@ a{
     margin: 0 auto;
 }
 
+// ШРИФТЫ
+@font-face {
+    font-family: 'Euclid Circular';
+    src: local('Euclid Circular Light'), local('Euclid-Circular-Light'),
+        url('../fonts/EuclidCircularA-Light.woff2') format('woff2'),
+        url('../fonts/EuclidCircularA-Light.woff') format('woff'),
+        url('../fonts/EuclidCircularA-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Euclid Circular';
+    src: local('Euclid Circular Bold'), local('Euclid-Circular-Bold'),
+        url('../fonts/EuclidCircularA-Bold.woff2') format('woff2'),
+        url('../fonts/EuclidCircularA-Bold.woff') format('woff'),
+        url('../fonts/EuclidCircularA-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
 // HEADER
 @import "header.scss";
 
@@ -20,3 +39,6 @@ a{
 
 // CATALOG
 @import "catalog.scss";
+
+// ADVANTAGES
+@import "advantages.scss";
