@@ -1,0 +1,147 @@
+.advantages {
+    background-color: #F5F5F5;
+
+    .advantages__bc {
+        background: url(../img/advantages/best\ quality.png) no-repeat;
+        background-position: 1% 20%;
+
+    }
+
+    .advantages-main {
+        padding-bottom: 45px;
+
+        .advantages-main__info {
+            display: flex;
+            position: relative;
+            margin-bottom: 175px;
+            pointer-events: none; 
+
+            .info__img {
+                // position: relative;
+
+                .info__mainimg {
+                    max-width: 100%;
+                    height: auto;
+                    position: absolute;
+                    left: -97px;
+                    bottom: -135px;
+                }
+            }
+
+            .info__block {
+                max-width: 503px;
+                margin-left: 700px;
+
+                .info__title {
+                    font-family: 'Roboto';
+                    font-size: 50px;
+                    line-height: 1.2;
+                    font-weight: 400;
+                    color: #292D32;
+                    padding-top: 183px;
+                }
+
+                .info__text {
+                    font-family: 'Roboto';
+                    font-size: 18px;
+                    line-height: 1.2;
+                    font-weight: 400;
+                    color: #838383;
+
+                    padding: 37px 0 41px 0;
+                }
+
+                .info__button {
+                    z-index: 1000;
+                    .info__btn {
+                        background-color: #33A9FF;
+                        border: none;
+                        padding: 15px;
+                        border-radius: 50%;
+                        pointer-events: auto; 
+                        cursor: pointer;
+                        
+                    }
+
+                    .info__btn:hover {
+                        background-color: #1a70ae;
+                        transition: .3s linear;
+                    }
+
+                    .info__href {
+                        font-family: 'Roboto';
+                        font-size: 16px;
+                        line-height: 1.2;
+                        font-weight: 400;
+                        color: #292D32;
+                        pointer-events: auto; 
+                        padding-left: 12px;
+                    }
+                }
+
+
+            }
+
+        }
+
+        .advantages-main__card {
+            display: flex;
+            justify-content: space-between;
+
+            .card__item {
+                display: block;
+                width: 330px;
+                height: 289px;
+                background-color: #292D32;
+                position: relative;
+                margin-right: 27px;
+
+                border-radius: 18px;
+
+                .card__item:hover {
+                    background-color: #1f2226;
+                    transition: .3s linear;
+                }
+
+                .item__vecror {
+                    .vector {
+                        position: absolute;
+                        top: 0;
+                        left: 180px;
+                    }
+                }
+
+                .item__icon {
+                    padding: 30px 0 25px 30px;
+
+                    .icon__icon {
+                        background-color: #343A41;
+                        padding: 17px;
+                        border-radius: 10px;
+                    }
+                }
+
+                .item__title {
+                    font-family: 'Euclid Circular';
+                    font-weight: 700;
+                    color: #ffffff;
+                    line-height: 1.2;
+                    font-size: 22px;
+
+                    padding: 0 0 13px 30px;
+                }
+
+                .item__text {
+                    max-width: 265px;
+
+                    font-family: 'Euclid Circular';
+                    font-size: 16px;
+                    line-height: 1.2;
+                    color: #b7b7b7;
+
+                    padding: 0 0 0 30px;
+                }
+            }
+        }
+    }
+}
