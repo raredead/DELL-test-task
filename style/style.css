@@ -141,7 +141,7 @@ a {
   padding-left: 12px;
 }
 .slider .swiper .swiper-wrapper .swiper-slide .swiper-slide__img {
-  padding-right: 60px;
+  padding: 41px 60px 47px 0;
 }
 .slider .swiper .swiper-wrapper .swiper-slide .swiper-slide__menu {
   padding-top: 320px;
@@ -166,4 +166,158 @@ a {
 }
 .slider .swiper .swiper-button-next::after {
   content: "";
+}
+
+.catalog .catalog-main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 164px 0 180px 0;
+}
+.catalog .catalog-main .catalog-main__block {
+  max-width: 440px;
+  margin: 0 20px 20px 0;
+}
+.catalog .catalog-main .catalog-main__block .block__title {
+  font-family: "Roboto";
+  font-size: 50px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #292D32;
+}
+.catalog .catalog-main .catalog-main__block .block__txt {
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #838383;
+  padding: 29px 0 46px 0;
+}
+.catalog .catalog-main .catalog-main__block .block__btn-block .block__btn {
+  background-color: #33A9FF;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.catalog .catalog-main .catalog-main__block .block__btn-block .block__btn:hover {
+  background-color: #1a70ae;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.catalog .catalog-main .catalog-main__block .block__btn-block .block__href {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #292D32;
+  padding-left: 12px;
+}
+.catalog .catalog-main .catalog-main__block-prodact {
+  width: 440px;
+  height: 381px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.catalog .catalog-main .catalog-main__block-prodact .block-prodact__number {
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 200;
+  color: #292D32;
+  padding: 50px 0 0 28px;
+}
+.catalog .catalog-main .catalog-main__block-prodact .block-prodact__img {
+  position: relative;
+}
+.catalog .catalog-main .catalog-main__block-prodact .block-prodact__img .block-prodact__laptop {
+  position: absolute;
+  left: 0;
+  bottom: -150px;
+}
+.catalog .catalog-main .catalog-main__block-prodact .block-prodact__img .block-prodact__monitor {
+  position: absolute;
+  left: 110px;
+  bottom: -150px;
+}
+.catalog .catalog-main .catalog-main__block-prodact .block-prodact__img .block-prodact__server {
+  position: absolute;
+  left: 50px;
+  bottom: -170px;
+}
+.catalog .catalog-main .catalog-main__block-prodact .block-prodact__img .block-prodact__emc {
+  position: absolute;
+  left: 80px;
+  bottom: -170px;
+}
+.catalog .catalog-main .catalog-main__block-prodact .block-prodact__img .block-prodact__parts {
+  position: absolute;
+  left: 60px;
+  bottom: -210px;
+}
+.catalog .catalog-main .catalog-main__block-prodact .block-prodact__text {
+  padding: 186px 0 40px 40px;
+}
+.catalog .catalog-main .catalog-main__block-prodact .block-prodact__text .block-prodact__suptitle {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 300;
+  color: #838383;
+}
+.catalog .catalog-main .catalog-main__block-prodact .block-prodact__text .block-prodact__title {
+  font-family: "Roboto";
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #292D32;
+}
+.catalog .catalog-main .catalog-main__block-prodact .block-prodact__title:hover {
+  text-decoration: underline;
+}
+.catalog .catalog-main .margin01 {
+  margin: 0 20px 20px 20px;
+  background-color: #F2F2F2;
+}
+.catalog .catalog-main .margin01:hover {
+  background-color: #F9F9F9;
+  -webkit-transition: 0.3 linear;
+  transition: 0.3 linear;
+}
+.catalog .catalog-main .margin02 {
+  margin: 0 0 20px 20px;
+  background-color: #F9F9F9;
+}
+.catalog .catalog-main .margin02:hover {
+  background-color: #F2F2F2;
+  -webkit-transition: 0.3 linear;
+  transition: 0.3 linear;
+}
+.catalog .catalog-main .margin03 {
+  margin: 20px 20px 0 0;
+  background-color: #F2F2F2;
+}
+.catalog .catalog-main .margin03:hover {
+  background-color: #F9F9F9;
+  -webkit-transition: 0.3 linear;
+  transition: 0.3 linear;
+}
+.catalog .catalog-main .margin04 {
+  margin: 20px 20px 0 20px;
+  background-color: #F9F9F9;
+}
+.catalog .catalog-main .margin04:hover {
+  background-color: #F2F2F2;
+  -webkit-transition: 0.3 linear;
+  transition: 0.3 linear;
+}
+.catalog .catalog-main .margin05 {
+  margin: 20px 0 0 20px;
+  background-color: #F2F2F2;
+}
+.catalog .catalog-main .margin05:hover {
+  background-color: #F9F9F9;
+  -webkit-transition: 0.3 linear;
+  transition: 0.3 linear;
 }
