@@ -1,0 +1,5 @@
+.footer .footer-main .footer-main__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

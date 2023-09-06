@@ -1,0 +1,75 @@
+.footer {
+    background: url(../img/DELL.png) no-repeat;
+    background-position: right;
+    .footer-main {
+        padding: 60px 0 40px 0;
+        .footer-main__menu {
+            display: flex;
+            justify-content: space-around;
+            padding: 0 0 50px 0;
+
+            .menu__logo {}
+
+            .menu-list {
+
+                .menu-list__title {
+                    font-family: 'Roboto';
+                    font-size: 25px;
+                    line-height: 1.2;
+                    font-weight: 400;
+                    color: #292D32;
+
+                    padding-bottom: 15px;
+                }
+
+                .menu-list__list {
+
+                    .list__footer {
+                        display: block;
+
+                        font-family: 'Roboto';
+                        font-size: 16px;
+                        line-height: 1.2;
+                        font-weight: 300;
+                        color: #292D32;
+
+                        padding-bottom: 10px;
+                    }
+                    .list__footer:hover{
+                        color: #88919a;
+                    }
+                }
+            }
+        }
+        .footer-main__info {
+            display: flex;
+            justify-content: space-around;
+            border-top: 1px solid #e5e5e5;
+
+            .info__block {
+                padding-top: 40px;
+                .block__title {
+                    font-family: 'Roboto';
+                    font-size: 16px;
+                    line-height: 1.2;
+                    font-weight: 400;
+                    color: #838383;
+
+                    padding-bottom: 10px;
+                }
+
+                .block__subtitle {
+                    font-family: 'Roboto';
+                    font-size: 18px;
+                    line-height: 1.2;
+                    font-weight: 400;
+                    color: #292D32;
+                }
+            }
+
+            .info__icon {
+                padding-top: 48px;
+            }
+        }
+    }
+}
