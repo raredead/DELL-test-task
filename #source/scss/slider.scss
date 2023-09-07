@@ -134,6 +134,11 @@
                         max-width: 180px;
                         font-weight: 400;
                     }
+                    @media (max-width:575px) {
+                        .menu__txt{
+                            font-size: 20px;
+                        }
+                    }
                 }
 
                 @media (max-width:575px) {
@@ -145,8 +150,6 @@
                         left: -2px;
                         top: 641px;
                     }
-
-                    .menu__txt {}
                 }
             }
 
