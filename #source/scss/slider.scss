@@ -1,6 +1,6 @@
 .slider {
     background-color: #F2F2F2;
-    padding-top: 125px;
+    margin-top: 100px;
 
     .slider_bg {
         background: url(../img/slider/slider.jpg) no-repeat;
@@ -16,6 +16,8 @@
                 display: flex;
                 background: url(../img/slider/Dell.png) no-repeat;
                 background-position: 0 20%;
+                position: relative;
+
 
 
                 .slider__scroll {
@@ -58,6 +60,8 @@
                         padding: 15px 0 60px 0;
                     }
 
+
+
                     .block__btn {
                         background-color: #33A9FF;
                         border: none;
@@ -78,12 +82,45 @@
                         color: #292D32;
                         padding-left: 12px;
                     }
+
+                    @media (max-width:575px) {
+                        .swiper-slide__suptitle {
+                            font-size: 15px;
+                        }
+
+                        .swiper-slide__title {
+                            font-size: 30px;
+                            padding: 15px 0 28px 0;
+                        }
+                    }
                 }
 
                 .swiper-slide__img {
                     padding: 41px 60px 47px 0;
 
                     .main-img {}
+                }
+
+                @media (max-width:575px) {
+                    .swiper-slide__block {
+                        padding: 110px 0 590px 15px;
+                    }
+
+                    .swiper-slide__img {
+                        padding: 0;
+                    }
+
+                    .slider__scroll {
+                        display: none;
+                    }
+
+                    .main-img {
+                        position: absolute;
+                        top: 299px;
+                        left: 60px;
+                        width: 237px;
+                        height: 325px;
+                    }
                 }
 
                 .swiper-slide__menu {
@@ -98,6 +135,27 @@
                         font-weight: 400;
                     }
                 }
+
+                @media (max-width:575px) {
+                    .swiper-slide__menu {
+                        padding: 80px 170px 100px 30px;
+                        background: url(../img/slider/slider.jpg) no-repeat;
+                        background-size: cover;
+                        position: absolute;
+                        left: -2px;
+                        top: 641px;
+                    }
+
+                    .menu__txt {}
+                }
+            }
+
+            @media (max-width:575px) {
+                .swiper-slide {
+
+                    background: url(../img/Dell375.png) no-repeat;
+                    background-position: 30% 5%;
+                }
             }
         }
 
@@ -105,8 +163,6 @@
             left: 70%;
             top: 80%;
         }
-
-        .swiper-pagination-bullet {}
 
         .swiper-pagination-bullet-active {
             background-color: #292D32;
@@ -121,5 +177,35 @@
         .swiper-button-next::after {
             content: '';
         }
+
+        @media (max-width:575px) {
+            .swiper-button-next {
+                top: 68%;
+                left: 78%;
+            }
+
+            .slider__arrow {
+                width: 64px;
+                height: 14px;
+            }
+
+            .swiper-pagination {
+                left: 50%;
+                top: 68%;
+            }
+        }
+
+    }
+
+    @media (max-width:575px) {
+        .slider_bg {
+            background: none;
+        }
+    }
+}
+
+@media (max-width:575px) {
+    .slider {
+        max-width: 375px;
     }
 }

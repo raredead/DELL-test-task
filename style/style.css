@@ -204,7 +204,7 @@ body._lock {
 
 .slider {
   background-color: #F2F2F2;
-  padding-top: 125px;
+  margin-top: 100px;
 }
 .slider .slider_bg {
   background: url(../img/slider/slider.jpg) no-repeat;
@@ -217,6 +217,7 @@ body._lock {
   display: flex;
   background: url(../img/slider/Dell.png) no-repeat;
   background-position: 0 20%;
+  position: relative;
 }
 .slider .swiper .swiper-wrapper .swiper-slide .slider__scroll {
   padding: 355px 108px 0 0;
@@ -271,8 +272,35 @@ body._lock {
   color: #292D32;
   padding-left: 12px;
 }
+@media (max-width: 575px) {
+  .slider .swiper .swiper-wrapper .swiper-slide .swiper-slide__block .swiper-slide__suptitle {
+    font-size: 15px;
+  }
+  .slider .swiper .swiper-wrapper .swiper-slide .swiper-slide__block .swiper-slide__title {
+    font-size: 30px;
+    padding: 15px 0 28px 0;
+  }
+}
 .slider .swiper .swiper-wrapper .swiper-slide .swiper-slide__img {
   padding: 41px 60px 47px 0;
+}
+@media (max-width: 575px) {
+  .slider .swiper .swiper-wrapper .swiper-slide .swiper-slide__block {
+    padding: 110px 0 590px 15px;
+  }
+  .slider .swiper .swiper-wrapper .swiper-slide .swiper-slide__img {
+    padding: 0;
+  }
+  .slider .swiper .swiper-wrapper .swiper-slide .slider__scroll {
+    display: none;
+  }
+  .slider .swiper .swiper-wrapper .swiper-slide .main-img {
+    position: absolute;
+    top: 299px;
+    left: 60px;
+    width: 237px;
+    height: 325px;
+  }
 }
 .slider .swiper .swiper-wrapper .swiper-slide .swiper-slide__menu {
   padding-top: 320px;
@@ -283,6 +311,22 @@ body._lock {
   color: #292D32;
   max-width: 180px;
   font-weight: 400;
+}
+@media (max-width: 575px) {
+  .slider .swiper .swiper-wrapper .swiper-slide .swiper-slide__menu {
+    padding: 80px 170px 100px 30px;
+    background: url(../img/slider/slider.jpg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -2px;
+    top: 641px;
+  }
+}
+@media (max-width: 575px) {
+  .slider .swiper .swiper-wrapper .swiper-slide {
+    background: url(../img/Dell375.png) no-repeat;
+    background-position: 30% 5%;
+  }
 }
 .slider .swiper .swiper-pagination {
   left: 70%;
@@ -298,7 +342,31 @@ body._lock {
 .slider .swiper .swiper-button-next::after {
   content: "";
 }
+@media (max-width: 575px) {
+  .slider .swiper .swiper-button-next {
+    top: 68%;
+    left: 78%;
+  }
+  .slider .swiper .slider__arrow {
+    width: 64px;
+    height: 14px;
+  }
+  .slider .swiper .swiper-pagination {
+    left: 50%;
+    top: 68%;
+  }
+}
+@media (max-width: 575px) {
+  .slider .slider_bg {
+    background: none;
+  }
+}
 
+@media (max-width: 575px) {
+  .slider {
+    max-width: 375px;
+  }
+}
 .catalog .catalog-main {
   width: 100%;
   display: -webkit-box;
