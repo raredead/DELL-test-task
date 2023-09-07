@@ -66,6 +66,16 @@
                     font-weight: 400;
                     color: #292D32;
                 }
+
+                @media (max-width:575px) {
+                    .contact-block__suptitle {
+                        font-size: 15px;
+                    }
+
+                    .contact-block__title {
+                        font-size: 18px;
+                    }
+                }
             }
 
             .contact__icon {
@@ -75,12 +85,39 @@
                     padding-right: 10px;
                 }
             }
+
+            @media (max-width:575px) {
+                .contact__title {
+                    font-size: 30px;
+                }
+
+                .contact__subtitle {
+                    font-size: 15px;
+                    padding: 15px 0 40px 0;
+                }
+            }
         }
 
-        .forms__imgphone {
+        .form__imgphone {
             position: absolute;
             top: 61px;
             left: 238px;
+        }
+
+        @media (max-width: 575px) {
+            .form-main__contact {
+                width: 375px;
+                height: 632px;
+                padding: 100px 0 0 30px;
+            }
+
+            .form__imgphone {
+                top: 440px;
+                left: 158px;
+                width: 47%;
+                height: auto;
+                rotate: 10deg;
+            }
         }
 
         .form-main__form {
@@ -107,6 +144,15 @@
 
                 padding: 18px 0 53px 0;
             }
+
+            @media (max-width:575px) {
+                .form__title {
+                    font-size: 30px;
+                }
+                .form__subtitle{
+                    font-size: 15px;
+                }
+            }   
 
             .form__block {
                 position: relative;
@@ -142,6 +188,14 @@
                         color: #ffffff;
                         padding: 0 10px;
                     }
+
+                    @media (max-width:575px) {
+                        .name {
+                            height: 50px;
+                            font-size: 16px;
+                            padding: 0 5px;
+                        }
+                    }   
                 }
 
                 .form__phone {
@@ -160,6 +214,14 @@
 
                         margin: 40px 0;
                     }
+
+                    @media (max-width:575px) {
+                        .phone {
+                            height: 50px;
+                            font-size: 16px;
+                            padding: 0 5px;
+                        }
+                    }   
 
                     .label {
                         position: absolute;
@@ -189,6 +251,14 @@
 
                         resize: none;
                     }
+
+                    @media (max-width:575px) {
+                        .comm {
+                            height: 90px;
+                            font-size: 16px;
+                            padding: 0 5px;
+                        }
+                    }   
 
                     .label {
                         position: absolute;
@@ -229,7 +299,37 @@
                         padding-left: 12px;
                     }
                 }
+
+                @media (max-width:575px) {
+                    .form__button {
+                        padding: 30px 0 0 0;
+                    }
+                }   
             }
+            @media (max-width:575px) {
+                .form__block {
+                    width: 319px;
+                    height: 438px;
+                }
+            }
+
+        }
+
+        @media (max-width:575px) {
+            .form-main__form {
+                width: 375px;
+                height: 558px;
+
+                border-radius: 0;
+                padding: 60px 0 0 20px;
+            }
+        }   
+    }
+
+    @media (max-width:575px) {
+        .form-main {
+            flex-wrap: wrap;
+            padding: 0;
         }
     }
 }
@@ -237,4 +337,17 @@
 // Модификаторы
 .email {
     padding: 47px 0 72px 0;
+}
+
+@media (max-width:575px) {
+    .email {
+        padding: 30px 0;
+    }
+}
+
+
+@media (max-width:575px) {
+    .form {
+        max-width: 375px;
+    }
 }
