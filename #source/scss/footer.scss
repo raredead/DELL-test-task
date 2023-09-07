@@ -1,14 +1,29 @@
 .footer {
     background: url(../img/DELL.png) no-repeat;
     background-position: right;
+
     .footer-main {
         padding: 60px 0 40px 0;
+
         .footer-main__menu {
-            display: flex;
-            justify-content: space-around;
+            // display: flex;
+            // justify-content: space-around;
             padding: 0 0 50px 0;
 
-            .menu__logo {}
+            .menu__wrap {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .menu__logo {
+                text-align: center;
+            }
+
+            @media (max-width:575px) {
+                .menu__logo {
+                    padding-bottom: 30px;
+                }
+            }   
 
             .menu-list {
 
@@ -21,6 +36,12 @@
 
                     padding-bottom: 15px;
                 }
+                @media (max-width:575px) {
+                    .menu-list__title {
+                        font-size: 18px;
+                    }
+                }   
+
 
                 .menu-list__list {
 
@@ -35,12 +56,44 @@
 
                         padding-bottom: 10px;
                     }
-                    .list__footer:hover{
+
+                    @media (max-width:575px) {
+                        .list__footer {
+                            font-size: 15px;
+                        }
+                    } 
+
+                    .list__footer:hover {
                         color: #88919a;
                     }
                 }
             }
+
+            @media (max-width:575px) {
+                .catalog {
+                    width: 200px;
+                }
+                .help{
+                    width: 170px;
+                    order:  -2;
+                }
+                .LK{
+                    width: 170px;
+                    order: -1;
+                    padding-bottom: 30px;
+                }
+            }
         }
+
+        @media (max-width:575px) {
+
+            .menu__wrap {
+                justify-content: center;
+                padding: 0 15px;
+                flex-wrap: wrap;
+            }
+        }
+
         .footer-main__info {
             display: flex;
             justify-content: space-around;
@@ -48,6 +101,7 @@
 
             .info__block {
                 padding-top: 40px;
+
                 .block__title {
                     font-family: 'Roboto';
                     font-size: 16px;
@@ -67,9 +121,40 @@
                 }
             }
 
+            @media (max-width:575px) {
+                .info__block {
+                    padding-top: 20px;
+                }
+            }   
+
             .info__icon {
                 padding-top: 48px;
             }
+            @media (max-width:575px) {
+                .info__icon {
+                    width: 100%;
+                    padding: 0;
+                }
+            }   
         }
+
+        @media (max-width:575px) {
+            .footer-main__info {
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                padding-left: 20px;
+            }
+        }   
+    }
+    @media (max-width:575px) {
+        .footer-main {
+            padding-bottom: 30px;
+        }
+    }   
+}
+
+@media (max-width:575px) {
+    .footer {
+        max-width: 375px;
     }
 }
