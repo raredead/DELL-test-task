@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link
@@ -26,11 +27,11 @@
                 </div>
                 <div class="wrap__list">
                     <div class="nav-list__list">
-                        <a href="" class="nav__list">главная</a>
-                        <a href="" class="nav__list">каталог</a>
-                        <a href="" class="nav__list">новости</a>
+                        <a href="#main" class="nav__list">главная</a>
+                        <a href="#catalog" class="nav__list">каталог</a>
+                        <a href="#news" class="nav__list">новости</a>
                         <a href="" class="nav__list">наш асц</a>
-                        <a href="" class="nav__list">контакты</a>
+                        <a href="#contact" class="nav__list">контакты</a>
                     </div>
                 </div>
                 <div class="nav__search">
@@ -65,7 +66,7 @@
     </div>
 </header>    
     <!-- SLIDER -->
-<section class="slider">
+<section class="slider" id="main">
     <div class="slider_bg">
         <div class="container">
 
@@ -185,7 +186,7 @@
     </div>
 </section>
     <!-- CATALOG -->
-<section class="catalog">
+<section class="catalog" id="catalog">
     <div class="container">
 
         <div class="catalog-main">
@@ -323,7 +324,7 @@
     
 </section>
     <!-- NEWS -->
-<section class="news">
+<section class="news" id="news">
     <div class="container">
 
         <div class="news-main">
@@ -478,7 +479,7 @@
     </div>
 </section>
     <!-- FORM -->
-<section class="form">
+<section class="form" id="contact">
     <div class="form_bg">
         <div class="container">
 
@@ -518,22 +519,22 @@
                 <div class="form-main__form">
                     <div class="form__title">Оставьте заявку</div>
                     <div class="form__subtitle">Оставьте свой номер, и мы перезвоним Вам.</div>
-                    <form action="" class="form__block">
-                        <div class="form__name">
+                    <form action="" class="form__block" id="add-form">
+                        <div class="form__wrap">
                             <label class="label">Ваше имя</label>
                             <input type="text" class="name">
                         </div>
-                        <div class="form__phone">
-                            <label class="label">Номер телефона</label>
+                        <div class="form__wrap">
+                            <label class="label__phone">Номер телефона</label>
                             <input type="text" class="phone">
                         </div>
-                        <div class="form__comm">
-                            <label class="label">Комментарий</label>
-                            <textarea name="" id="" cols="30" rows="4" class="comm"></textarea>
+                        <div class="form__wrap">
+                            <label class="label__comm">Комментарий</label>
+                            <input type="text" class="comm">
                         </div>
 
                         <div class="form__button">
-                            <button class="form__btn">
+                            <button type="submit" class="form__btn">
                                 <img src="img/slider/btn-block.svg" alt="">
                             </button>
                             <a href="" class="form__href">Заказать</a>

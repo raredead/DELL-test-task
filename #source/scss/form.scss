@@ -100,8 +100,8 @@
 
         .form__imgphone {
             position: absolute;
-            top: 61px;
-            left: 238px;
+            top: 87px;
+            left: 493px;
         }
 
         @media (max-width: 575px) {
@@ -160,7 +160,7 @@
                 height: 527px;
                 box-sizing: border-box;
 
-                .form__name {
+                .form__wrap{
                     position: relative;
 
                     .label {
@@ -188,6 +188,15 @@
                         color: #ffffff;
                         padding: 0 10px;
                     }
+                    .name.error{
+                        border: 1px solid rgb(150, 26, 26);
+                    }
+                    .span__name{
+                        font-family: 'Roboto';
+                        font-size: 18px;
+                        color: #F2F2F2;
+                        padding: 10px 0 0 25px;
+                    }
 
                     @media (max-width:575px) {
                         .name {
@@ -198,7 +207,7 @@
                     }   
                 }
 
-                .form__phone {
+                .form__wrap {
                     position: relative;
 
                     .phone {
@@ -212,7 +221,10 @@
                         color: #ffffff;
                         padding: 0 10px;
 
-                        margin: 40px 0;
+                        margin-top: 40px;
+                    }
+                    .phone.error {
+                        border: 1px solid rgb(150, 26, 26);;
                     }
 
                     @media (max-width:575px) {
@@ -223,7 +235,7 @@
                         }
                     }   
 
-                    .label {
+                    .label__phone {
                         position: absolute;
                         top: 28px;
                         left: 28px;
@@ -236,7 +248,7 @@
                     }
                 }
 
-                .form__comm {
+                .form__wrap{
                     position: relative;
 
                     .comm {
@@ -245,11 +257,17 @@
                         border: 1px solid #818386;
                         outline: none;
                         border-radius: 20px;
-                        font-size: 30px;
+                        font-size: 22px;
                         color: #ffffff;
-                        padding: 10px 10px;
-
+                        padding: 0 10px;
+                        height: 100px;
                         resize: none;
+
+                        margin-top: 40px;
+                    }
+
+                    .comm.error {
+                        border: 1px solid rgb(150, 26, 26);;
                     }
 
                     @media (max-width:575px) {
@@ -260,9 +278,9 @@
                         }
                     }   
 
-                    .label {
+                    .label__comm {
                         position: absolute;
-                        top: -9px;
+                        top: 28px;
                         left: 28px;
                         background: #292D32;
                         padding: 0 5px;
@@ -271,6 +289,7 @@
                         font-size: 18px;
                         color: #F2F2F2;
                     }
+
                 }
 
                 .form__button {
@@ -350,4 +369,14 @@
     .form {
         max-width: 375px;
     }
+}
+
+.error-label{
+    display: block;
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #F2F2F2;
+    padding-left: 25px;
+
+    padding-top: 10px;
 }
