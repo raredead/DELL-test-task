@@ -11,6 +11,9 @@ a{
     max-width: 1400px;
     margin: 0 auto;
 }
+body._lock{
+    overflow: hidden;
+}
 
 // ШРИФТЫ
 @font-face {
