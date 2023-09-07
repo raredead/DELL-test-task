@@ -207,6 +207,62 @@ body._lock {
     margin-left: 15px;
   }
 }
+.header .drop-menu {
+  position: absolute;
+  top: 108px;
+  left: 1306px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  background-color: #fff;
+  -webkit-box-shadow: #292D32;
+          box-shadow: #292D32;
+  border-radius: 20px;
+  padding: 10px 0;
+}
+.header .drop-menu .drop-menu__acc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 20px;
+}
+.header .drop-menu .drop-menu__acc .acc__icon {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+.header .drop-menu .drop-menu__acc .acc__name {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+.header .drop-menu .drop-menu__li {
+  display: block;
+  padding: 25px 40px 15px 30px;
+  border-top: 1px solid #f6f6f6;
+  border-bottom: 1px solid #f6f6f6;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+.header .drop-menu .drop-menu__li:last-child {
+  border-bottom: 0;
+}
+.header .drop-menu .drop-menu__li:hover {
+  background-color: #f9f9f9;
+  color: #292D32;
+}
+.header .drop-menu.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
 
 .slider {
   background-color: #F2F2F2;
