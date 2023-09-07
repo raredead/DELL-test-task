@@ -1,3 +1,20 @@
+// Скролл к элементам
+const links = document.querySelectorAll('.nav__list');
+console.log(links);
+
+for(let i = 0; i < links.length; i++){
+  links[i].addEventListener('click', (e)=>{
+    e.preventDefault();
+
+    const blockId = e.currentTarget.getAttribute('href').substr(1);
+    document.getElementById(blockId).scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    })
+  });
+}
+
+
 // Slider
 const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -50,3 +67,60 @@ function hide(e) {
     dropMenu.classList.remove('active');
   });
 }
+
+
+// Валидация формы
+function validation(form){
+
+  function removeError (input) {
+    const inputField = input;
+    const parent = input.parentNode;
+
+    if(inputField.classList.contains('error')){
+      parent.querySelector('.error-label').remove()
+      inputField.classList.remove('error')
+    }
+  }
+
+
+  function createError(input, text){
+    const inputField = input;
+    const parent = input.parentNode;
+    const errorLabel = document.createElement('label')
+
+    errorLabel.classList.add('error-label')
+    errorLabel.textContent = text
+
+    inputField.classList.add('error');
+
+    parent.append(errorLabel);
+  }
+
+
+  let result = true;
+
+  const allInput = form.querySelectorAll('input');
+  
+  for (const input of allInput) {
+
+    removeError(input)
+    
+    if(input.value == ''){
+
+      
+      createError(input, 'Поле не заполнено');
+      result = false
+    }
+  }
+
+  return result;
+}
+
+
+document.getElementById('add-form').addEventListener('submit', function(e){
+  e.preventDefault();
+
+  if (validation(this) == true){
+    
+  }
+});

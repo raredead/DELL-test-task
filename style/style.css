@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 a {
   color: #292D32;
   text-decoration: none;
@@ -264,6 +269,11 @@ body._lock {
   pointer-events: all;
 }
 
+@media (max-width: 575px) {
+  .header {
+    width: 375px;
+  }
+}
 .slider {
   background-color: #F2F2F2;
   margin-top: 100px;
@@ -1188,8 +1198,8 @@ body._lock {
 }
 .form .form-main .form__imgphone {
   position: absolute;
-  top: 61px;
-  left: 238px;
+  top: 87px;
+  left: 493px;
 }
 @media (max-width: 575px) {
   .form .form-main .form-main__contact {
@@ -1242,10 +1252,10 @@ body._lock {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.form .form-main .form-main__form .form__block .form__name {
+.form .form-main .form-main__form .form__block .form__wrap {
   position: relative;
 }
-.form .form-main .form-main__form .form__block .form__name .label {
+.form .form-main .form-main__form .form__block .form__wrap .label {
   position: absolute;
   top: -9px;
   left: 28px;
@@ -1256,7 +1266,7 @@ body._lock {
   font-size: 18px;
   color: #F2F2F2;
 }
-.form .form-main .form-main__form .form__block .form__name .name {
+.form .form-main .form-main__form .form__block .form__wrap .name {
   width: 100%;
   background-color: #292D32;
   border: 1px solid #818386;
@@ -1269,17 +1279,26 @@ body._lock {
   color: #ffffff;
   padding: 0 10px;
 }
+.form .form-main .form-main__form .form__block .form__wrap .name.error {
+  border: 1px solid rgb(150, 26, 26);
+}
+.form .form-main .form-main__form .form__block .form__wrap .span__name {
+  font-family: "Roboto";
+  font-size: 18px;
+  color: #F2F2F2;
+  padding: 10px 0 0 25px;
+}
 @media (max-width: 575px) {
-  .form .form-main .form-main__form .form__block .form__name .name {
+  .form .form-main .form-main__form .form__block .form__wrap .name {
     height: 50px;
     font-size: 16px;
     padding: 0 5px;
   }
 }
-.form .form-main .form-main__form .form__block .form__phone {
+.form .form-main .form-main__form .form__block .form__wrap {
   position: relative;
 }
-.form .form-main .form-main__form .form__block .form__phone .phone {
+.form .form-main .form-main__form .form__block .form__wrap .phone {
   width: 100%;
   background-color: #292D32;
   border: 1px solid #818386;
@@ -1289,16 +1308,19 @@ body._lock {
   font-size: 20px;
   color: #ffffff;
   padding: 0 10px;
-  margin: 40px 0;
+  margin-top: 40px;
+}
+.form .form-main .form-main__form .form__block .form__wrap .phone.error {
+  border: 1px solid rgb(150, 26, 26);
 }
 @media (max-width: 575px) {
-  .form .form-main .form-main__form .form__block .form__phone .phone {
+  .form .form-main .form-main__form .form__block .form__wrap .phone {
     height: 50px;
     font-size: 16px;
     padding: 0 5px;
   }
 }
-.form .form-main .form-main__form .form__block .form__phone .label {
+.form .form-main .form-main__form .form__block .form__wrap .label__phone {
   position: absolute;
   top: 28px;
   left: 28px;
@@ -1309,30 +1331,35 @@ body._lock {
   font-size: 18px;
   color: #F2F2F2;
 }
-.form .form-main .form-main__form .form__block .form__comm {
+.form .form-main .form-main__form .form__block .form__wrap {
   position: relative;
 }
-.form .form-main .form-main__form .form__block .form__comm .comm {
+.form .form-main .form-main__form .form__block .form__wrap .comm {
   width: 100%;
   background-color: #292D32;
   border: 1px solid #818386;
   outline: none;
   border-radius: 20px;
-  font-size: 30px;
+  font-size: 22px;
   color: #ffffff;
-  padding: 10px 10px;
+  padding: 0 10px;
+  height: 100px;
   resize: none;
+  margin-top: 40px;
+}
+.form .form-main .form-main__form .form__block .form__wrap .comm.error {
+  border: 1px solid rgb(150, 26, 26);
 }
 @media (max-width: 575px) {
-  .form .form-main .form-main__form .form__block .form__comm .comm {
+  .form .form-main .form-main__form .form__block .form__wrap .comm {
     height: 90px;
     font-size: 16px;
     padding: 0 5px;
   }
 }
-.form .form-main .form-main__form .form__block .form__comm .label {
+.form .form-main .form-main__form .form__block .form__wrap .label__comm {
   position: absolute;
-  top: -9px;
+  top: 28px;
   left: 28px;
   background: #292D32;
   padding: 0 5px;
@@ -1405,6 +1432,15 @@ body._lock {
     max-width: 375px;
   }
 }
+.error-label {
+  display: block;
+  font-family: "Roboto";
+  font-size: 16px;
+  color: #F2F2F2;
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
 .footer {
   background: url(../img/DELL.png) no-repeat;
   background-position: right;

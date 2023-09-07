@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+html,
+ body{
+    overflow-x: hidden;
+}   
+
 a{
     color:#292D32;
     text-decoration: none;

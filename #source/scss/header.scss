@@ -239,3 +239,8 @@
         pointer-events: all;
     }
 } 
+@media (max-width:575px) {
+    .header {
+        width: 375px;
+    }
+}   
