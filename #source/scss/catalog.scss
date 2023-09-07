@@ -1,5 +1,4 @@
 .catalog {
-
     .catalog-main {
         width: 100%;
 
@@ -40,7 +39,8 @@
 
                     cursor: pointer;
                 }
-                .block__btn:hover{
+
+                .block__btn:hover {
                     background-color: #1a70ae;
                     transition: .3s linear;
                 }
@@ -54,6 +54,23 @@
 
                     padding-left: 12px;
                 }
+            }
+
+            @media (max-width:575px) {
+                .block__title {
+                    font-size: 30px;
+                }
+
+                .block__txt {
+                    font-size: 15px;
+                    padding: 20px 0 30px 0;
+                }
+            }
+        }
+
+        @media (max-width:575px) {
+            .catalog-main__block {
+                padding: 0 15px;
             }
         }
 
@@ -76,42 +93,83 @@
 
             .block-prodact__img {
                 position: relative;
+
                 .block-prodact__laptop {
                     position: absolute;
                     left: 0;
                     bottom: -150px;
                 }
-                .block-prodact__monitor{
+
+                .block-prodact__monitor {
                     position: absolute;
                     left: 110px;
                     bottom: -150px;
                 }
-                .block-prodact__server{
+
+                .block-prodact__server {
                     position: absolute;
                     left: 50px;
                     bottom: -170px;
                 }
-                .block-prodact__emc{
+
+                .block-prodact__emc {
                     position: absolute;
                     left: 80px;
                     bottom: -170px;
                 }
-                .block-prodact__parts{
+
+                .block-prodact__parts {
                     position: absolute;
                     left: 60px;
                     bottom: -210px;
                 }
+
+                @media (max-width:575px) {
+                    .block-prodact__laptop {
+                        max-width: 302px;
+                        max-height: 178px;
+                    }
+
+                    .block-prodact__monitor {
+                        max-width: 210px;
+                        max-height: 193px;
+                        left: 67px;
+                        bottom: -168px;
+                    }
+
+                    .block-prodact__server {
+                        max-width: 264px;
+                        max-height: 107px;
+                        left: 35px;
+                        bottom: -148px;
+                    }
+
+                    .block-prodact__emc {
+                        max-width: 226px;
+                        max-height: 124px;
+                        left: 41px;
+                        bottom: -148px;
+                    }
+
+                    .block-prodact__parts {
+                        max-width: 253px;
+                        max-height: 167px;
+                        left: 38px;
+                        bottom: -168px;
+                    }
+                }
             }
-            .block-prodact__text{
+
+            .block-prodact__text {
                 padding: 186px 0 40px 40px;
-                
+
                 .block-prodact__suptitle {
                     font-family: 'Roboto';
                     font-size: 18px;
                     font-weight: 300;
                     color: #838383;
                 }
-    
+
                 .block-prodact__title {
                     font-family: 'Roboto';
                     font-size: 25px;
@@ -119,51 +177,111 @@
                     font-weight: 400;
                     color: #292D32;
                 }
+
+                @media (max-width:575px) {
+                    .block-prodact__suptitle {
+                        font-size: 15px;
+                    }
+
+                    .block-prodact__title {
+                        font-size: 20px;
+                    }
+                }
             }
-            
-            .block-prodact__title:hover{
+
+            .block-prodact__title:hover {
                 text-decoration: underline;
             }
+
+            @media (max-width:575px) {
+                .block-prodact__text {
+                    padding: 170px 0 49px 20px;
+                }
+
+                .block-prodact__number {
+                    font-size: 20px;
+                    padding: 20px 0 0 20px;
+                }
+            }
         }
-        .margin01{
+
+        @media (max-width:575px) {
+            .catalog-main__block-prodact {
+                width: 345px;
+                height: 275px;
+            }
+        }
+
+        .margin01 {
             margin: 0 20px 20px 20px;
             background-color: #F2F2F2;
         }
-        .margin01:hover{
+
+        .margin01:hover {
             background-color: #F9F9F9;
             transition: .3 linear;
         }
-        .margin02{
+
+        .margin02 {
             margin: 0 0 20px 20px;
             background-color: #F9F9F9;
         }
-        .margin02:hover{
+
+        .margin02:hover {
             background-color: #F2F2F2;
             transition: .3 linear;
         }
-        .margin03{
+
+        .margin03 {
             margin: 20px 20px 0 0;
             background-color: #F2F2F2;
         }
-        .margin03:hover{
+
+        .margin03:hover {
             background-color: #F9F9F9;
             transition: .3 linear;
         }
-        .margin04{
+
+        .margin04 {
             margin: 20px 20px 0 20px;
             background-color: #F9F9F9;
         }
-        .margin04:hover{
+
+        .margin04:hover {
             background-color: #F2F2F2;
             transition: .3 linear;
         }
+
         .margin05 {
             margin: 20px 0 0 20px;
             background-color: #F2F2F2;
         }
-        .margin05:hover{
+
+        .margin05:hover {
             background-color: #F9F9F9;
             transition: .3 linear;
         }
+
+        @media (max-width:575px) {
+            .margin01,
+            .margin02,
+            .margin03,
+            .margin04,
+            .margin05 {
+                margin: 10px 15px;
+            }
+        }   
+    }
+
+    @media (max-width:575px) {
+        .catalog-main {
+            padding: 120px 0;
+        }
+    }
+}
+
+@media (max-width:575px) {
+    .catalog {
+        max-width: 375px;
     }
 }
