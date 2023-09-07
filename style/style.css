@@ -8,6 +8,12 @@ body {
   overflow-x: hidden;
 }
 
+@media (max-width: 575px) {
+  html {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+}
 a {
   color: #292D32;
   text-decoration: none;
@@ -370,7 +376,7 @@ body._lock {
     position: absolute;
     top: 299px;
     left: 60px;
-    width: 237px;
+    max-width: 237px;
     height: 325px;
   }
 }
@@ -425,8 +431,8 @@ body._lock {
     left: 78%;
   }
   .slider .swiper .slider__arrow {
-    width: 64px;
-    height: 14px;
+    max-width: 64px;
+    max-height: 14px;
   }
   .slider .swiper .swiper-pagination {
     left: 50%;
@@ -445,7 +451,7 @@ body._lock {
   }
 }
 .catalog .catalog-main {
-  width: 100%;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

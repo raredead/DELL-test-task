@@ -7,7 +7,12 @@ html,
  body{
     overflow-x: hidden;
 }   
-
+@media (max-width:575px) {
+   html {
+        max-width: 375px;
+        margin: 0 auto;
+    }
+}   
 a{
     color:#292D32;
     text-decoration: none;

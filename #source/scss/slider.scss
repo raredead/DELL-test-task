@@ -118,7 +118,7 @@
                         position: absolute;
                         top: 299px;
                         left: 60px;
-                        width: 237px;
+                        max-width:  237px;
                         height: 325px;
                     }
                 }
@@ -188,8 +188,8 @@
             }
 
             .slider__arrow {
-                width: 64px;
-                height: 14px;
+                max-width: 64px;
+                max-height: 14px;
             }
 
             .swiper-pagination {
