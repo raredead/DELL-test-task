@@ -1,9 +1,15 @@
-// Скролл к элементам
+// Переменные
 const links = document.querySelectorAll('.nav__list');
-console.log(links);
+const iconMenu = document.querySelector('.burger__btn');
+const menyBody = document.querySelector('.wrap__list');
+const iconBtn = document.getElementById('account_header');
+const dropMenu = document.querySelector('.drop-menu');
+const main = document.querySelector('body');
 
-for(let i = 0; i < links.length; i++){
-  links[i].addEventListener('click', (e)=>{
+// Скролл к элементам
+
+links.forEach((link) => {
+  link.addEventListener('click', (e) => {
     e.preventDefault();
 
     const blockId = e.currentTarget.getAttribute('href').substr(1);
@@ -11,24 +17,21 @@ for(let i = 0; i < links.length; i++){
       behavior: "smooth",
       block: "center"
     })
-  });
-}
-
+  })
+});
 
 // Slider
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
+
   direction: 'horizontal',
   loop: true,
 
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
     dynamicBullets: true,
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -36,8 +39,6 @@ const swiper = new Swiper('.swiper', {
 });
 
 // Бургер меню
-const iconMenu = document.querySelector('.burger__btn');
-const menyBody = document.querySelector('.wrap__list');
 
 iconMenu.addEventListener('click', (e) => {
   document.body.classList.toggle('_lock');
@@ -48,10 +49,6 @@ iconMenu.addEventListener('click', (e) => {
 
 
 // Drop-menu header
-
-const iconBtn = document.getElementById('account_header');
-const dropMenu = document.querySelector('.drop-menu');
-const main = document.querySelector('body');
 
 iconBtn.addEventListener('mouseover', show);
 iconBtn.addEventListener('mouseout', hide);
@@ -68,22 +65,21 @@ function hide(e) {
   });
 }
 
-
 // Валидация формы
-function validation(form){
 
-  function removeError (input) {
+function validation(form) {
+
+  function removeError(input) {
     const inputField = input;
     const parent = input.parentNode;
 
-    if(inputField.classList.contains('error')){
+    if (inputField.classList.contains('error')) {
       parent.querySelector('.error-label').remove()
       inputField.classList.remove('error')
     }
   }
 
-
-  function createError(input, text){
+  function createError(input, text) {
     const inputField = input;
     const parent = input.parentNode;
     const errorLabel = document.createElement('label')
@@ -99,28 +95,24 @@ function validation(form){
 
   let result = true;
 
-  const allInput = form.querySelectorAll('input');
-  
-  for (const input of allInput) {
+  form.querySelectorAll('input').forEach(input => {
 
     removeError(input)
-    
-    if(input.value == ''){
 
-      
+    if (input.value == '') {
       createError(input, 'Поле не заполнено');
       result = false
     }
-  }
+  });
 
   return result;
 }
 
 
-document.getElementById('add-form').addEventListener('submit', function(e){
+document.getElementById('add-form').addEventListener('submit', function (e) {
   e.preventDefault();
 
-  if (validation(this) == true){
-    
+  if (validation(this) == true) {
+
   }
 });
